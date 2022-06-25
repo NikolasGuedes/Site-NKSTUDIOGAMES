@@ -1,0 +1,343 @@
+:root {
+
+    --Preto: #000000;
+    --Branco: #ffffff;
+    --Cinza-claro: #1a1a1a;
+    --Cinza-escuro: #0d0d0d;
+    --Fonte-cinza: #4d4d4d;
+    --fonte-principal: 'Raleway'
+}
+
+
+.area__capa--logo {
+
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
+    background-color: var(--Preto);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*
+
+    transition: 0.5 all;
+    clip-path: 
+    polygon(
+            0% 0%,
+            100% 0%,
+            100% calc(100% - 250px),
+            0% 100%
+        );  
+    */
+}
+
+.area__pilares, .area__descricao {
+    padding: 2rem 0;
+}
+
+.area__pilares--texto, .area__jogos--texto {
+
+  display: flex;
+  justify-content: space-evenly;
+    
+}
+
+.area__pilares--icones {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem 5rem;
+}
+
+.texto-descricao {
+
+    text-align: center;
+    color: #e4e4e4;
+    font-size: 3rem;
+    font-weight: 80;
+    padding: 0 10rem;
+    margin: 0%;
+    line-height: 4rem;
+}
+
+.texto-descricao b {
+
+    font-weight: 600;
+}
+
+.caixa {
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.card__pilar {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    margin: 2rem 2rem;
+}
+
+.card__pilar--titulo {
+
+    background: transparent;
+    color: #fdfdfd;
+    padding: .3rem;
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+    font-size: 1.7rem;
+    
+}
+
+.card__pilar:nth-child(1) {
+    background: url(../imgs/pilar-criatividade.png) center / cover no-repeat;  
+}
+
+.card__pilar:nth-child(2) {
+    background: url(../imgs/pilar-imersao.png) center / cover no-repeat;  
+}
+
+.card__pilar:nth-child(3) {
+    background: url(../imgs/pilar-diversao.png) center / cover no-repeat;  
+}
+
+
+.area__projetos, .area__download {
+
+    background-color: var(--Cinza-escuro);    
+}  
+
+.area__projetos--titulo {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-projetos {
+    text-align: center;
+    color: #e4e4e4;
+    font-size: 3rem;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid #e4e4e4;
+    width: 80%;
+}
+
+.destacado {
+
+    font-weight: 600;
+}
+
+
+.area__projetos--icones {
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.card__projetos {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    margin: 2rem 2rem;
+    border-radius: 30px;
+    transition: 0.2s all;
+}
+
+.card__projetos:hover
+{
+    /*
+    transform: scale(1.05);
+    */
+    border: 4px solid #ffffff;
+}
+
+.card__projetos--titulo {
+
+    background: white;
+    color: #000000;
+    padding: .7rem;
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+    font-size: 2rem;
+    border-radius: 0 0 30px 30px;
+    
+}
+
+
+.linha-01:nth-child(1) {
+    background: url(../imgs/screenshot-OLI.jpg) center / cover no-repeat;  
+}
+
+.linha-01:nth-child(2) {
+    background: url(../imgs/screenshot-UPPER-LINE.jpg) center / cover no-repeat;  
+}
+
+.linha-01:nth-child(3) {
+    background: url(../imgs/screenshot-UPPER-LINE-2.jpg) center / cover no-repeat;  
+}
+
+.linha-02:nth-child(1) {
+    background: url(../imgs/screenshot-INFINITY-BAR.jpg) center / cover no-repeat;  
+}
+
+.linha-02:nth-child(2) {
+    background: url(../imgs/screenshot-INFINITY-BAR.jpg) center / cover no-repeat;  
+}
+
+.linha-02:nth-child(3) {
+    background: url(../imgs/screenshot-INFINITY-BAR.jpg) center / cover no-repeat;  
+}
+
+
+
+
+/* CSS pagina dos jogos*/
+
+.area__capa--jogo {
+
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../imgs/screenshot-OLI.jpg) center / cover no-repeat; 
+}
+
+.texto-descricao--jogos {
+
+    text-align: center;
+    color: #e4e4e4;
+    font-size: 2rem;
+    font-weight: 80;
+    padding: 2rem 15rem;
+    margin: 0%;
+    line-height: 3rem;
+    font-weight: 500;
+}
+
+.area__plataformas {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 2rem 15rem;
+}
+
+.Logo-jogo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ffffff;
+}
+
+.plataformas-jogo {
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns:auto;
+    grid-template-rows: auto auto;
+}
+
+.titulo-plataformas {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #4d4d4d;
+    padding: 1rem 4rem;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.plataformas-icones {
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns:auto auto;
+    grid-template-rows: auto;
+
+}
+
+.icone-plataformas {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    margin: 2rem;
+}
+
+.area__video {
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+
+    border-radius: 30px;
+}
+
+.video-celular {
+
+    border-radius: 30px;
+}
+
+.area__video--botao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border: 2px solid #ffffff;
+    transition: 0.2s all;
+}
+
+.area__video--botao a:visited {
+
+    color: inherit;
+	text-decoration: none;
+}
+
+
+.area__video--botao:hover {
+    background-color: #ffffff;
+    color: #0d0d0d;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transform: scale(1.05);
+}
+

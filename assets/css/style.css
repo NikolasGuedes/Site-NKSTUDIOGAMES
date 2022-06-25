@@ -1,0 +1,60 @@
+:root {
+
+    --Preto: #000000;
+    --Cinza-claro: #1a1a1a;
+    --Cinza-escuro: #0d0d0d;
+    --Fonte-cinza: #4d4d4d;
+    --fonte-principal: 'Raleway';
+}
+
+html {
+
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 40px);
+}
+
+.app {
+    background-color: var(--Cinza-claro);
+    font-family:  'Raleway', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "cabecalho"
+    "conteudo"
+    "rodape";
+
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 3%;
+
+}
+
+.cabecalho {
+    
+    box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.16);
+    
+    position: fixed;
+    width: 100%;
+    
+    background-color: var(--Preto);
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    grid-area: cabecalho;
+}
+ 
+.conteudo {
+    grid-area: conteudo;
+}
+
+.rodape {
+    background-color: var(--Preto);
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    color: var(--Fonte-cinza);
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    text-align: center;
+    grid-area: rodape;
+}

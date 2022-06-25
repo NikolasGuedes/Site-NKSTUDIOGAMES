@@ -1,0 +1,327 @@
+@media screen and (min-width: 0px) {
+
+
+    .cabecalho {
+
+        justify-content: flex-end;
+       
+    }
+
+    .menu__item--celular {
+
+        display: flex;
+        padding: 0.2rem;
+        margin: 0;
+    }
+
+    .logo__cabecalho {
+        display: none;
+    }
+
+
+    .menu__link:nth-child(1) {
+
+        display: none;
+    }
+
+    .menu__link:nth-child(2) {
+
+        display: none;
+    }
+
+    .menu__link:nth-child(3) {
+
+        display: none;
+    }
+ 
+
+    .texto-descricao {
+        
+        padding: 0 3rem;
+        text-align: center;
+    }
+
+    .area__pilares--icones {
+
+        padding: 2rem 0;
+    }
+
+    .area__projetos--icones{
+
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .card__projetos {
+
+        width: 300px;
+        height: 300px;
+        margin-top: 1rem;
+    }
+
+    .rodape {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        padding: 0.2rem;
+       
+    }
+
+    .menu__item--footer {
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+
+    .Icone__footer--logoNikolasGuedes {
+        display: none;
+    }
+    
+    .Desenvolvedor-footer {
+        display: none;
+    }
+
+    .area__video {
+        
+        padding: 1rem 0;
+    }
+
+    .video {
+        display: none;
+    }
+
+    .video-celular {
+        display: flex;
+    }
+
+    .texto-descricao--jogos {
+
+        padding: 2rem 3rem;
+    }
+
+    .area__plataformas {
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        padding: 0;
+    }
+
+    .Logo-jogo {
+
+        border-bottom: 0;
+        border-right: 0;
+    
+    }
+
+    .img-logo--jogo {
+
+        width: 350px;
+    }
+
+    .titulo-plataformas {
+        
+        padding: 1rem 4rem;
+        margin-top: 1rem;
+    }
+
+  
+    
+}
+
+@media screen and (min-width: 768px) {
+
+
+    .cabecalho {
+
+        justify-content: center;
+    }
+
+
+    .logo__cabecalho {
+        display: block;
+        left: 1em;
+    }
+
+    .menu__link {
+
+        color: #e4e4e4;
+        padding: 0 2em;
+        font-weight: 200;
+    }
+   
+
+    .menu__link:nth-child(1) {
+
+        display: flex;
+    }
+
+    .menu__link:nth-child(2) {
+
+        display: flex;
+    }
+
+    .menu__link:nth-child(3) {
+
+        display: flex;
+    }
+
+    .menu__link--celular {
+
+        display: none;
+    }
+
+    .menu_celular__botao:checked ~ .lista-menu__celular {
+        display: none;
+    }
+
+
+    .area__pilares--icones {
+
+        padding: 2rem 5rem;
+    }
+
+    .card__projetos {
+
+        width: 400px;
+        height: 400px;
+        margin: 2rem 2rem;
+    }
+
+    .video {
+        display: flex;
+    }
+
+    .video-celular {
+        display: none;
+    }
+
+    .rodape {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0.2rem;
+       
+    }
+
+    .menu__item--footer {
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+
+    .Icone__footer--logoNikolasGuedes {
+        display: flex;
+    }
+    
+    .Desenvolvedor-footer {
+        display: flex;
+    }
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .logo__cabecalho {
+        left: 2em;
+    }
+
+    .menu__link {
+
+        color: #e4e4e4;
+        padding: 0 4em;
+        font-weight: 200;
+    }
+   
+    .area__projetos--icones{
+
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .card__projetos {
+
+        width: 295px;
+        height: 295px;
+        margin: 2rem 1rem;
+    }
+    
+    .texto-descricao {
+        
+        padding: 0 5rem;
+
+    }
+
+    .texto-descricao--jogos {
+
+        padding: 2rem 10rem;
+    }
+
+
+    .area__plataformas {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 2rem 2rem;
+    }
+
+    .Logo-jogo {
+
+        border-bottom: 0;
+        border-right: 1px solid #ffffff;
+
+    }
+
+    .titulo-plataformas {
+
+        margin-top: 0;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .logo__cabecalho {
+        left: 5em;
+    }
+    
+    .texto-descricao {
+        
+        padding: 0 10rem;
+
+    }
+
+    .card__projetos {
+
+        width: 350px;
+        height: 350px;
+        margin: 2rem 0;
+    }
+
+    .area__video {
+
+        padding: 2rem 10rem;
+    }
+
+    .texto-descricao--jogos {
+
+        padding: 2rem 15rem;
+    }
+
+
+    .area__plataformas {
+
+        padding: 2rem 10rem;
+    }
+    
+}
