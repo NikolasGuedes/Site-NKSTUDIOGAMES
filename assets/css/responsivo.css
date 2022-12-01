@@ -4,7 +4,7 @@
     .cabecalho {
 
         justify-content: flex-end;
-       
+
     }
 
     .menu__item--celular {
@@ -33,12 +33,33 @@
 
         display: none;
     }
- 
+
 
     .texto-descricao {
-        
+
         padding: 0 3rem;
         text-align: center;
+    }
+
+    .area__capa--logo {
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100%;
+
+    }
+
+    .texto_capa{
+
+        display: none;
+
+    }
+
+    .logo_nk {
+
+        width: 60%;
+        margin: 0;
+
     }
 
     .area__pilares--icones {
@@ -46,7 +67,7 @@
         padding: 2rem 0;
     }
 
-    .area__projetos--icones{
+    .area__projetos--icones {
 
         flex-direction: column;
         flex-wrap: wrap;
@@ -64,7 +85,7 @@
         grid-template-columns: auto;
         grid-template-rows: 1fr 1fr;
         padding: 0.2rem;
-       
+
     }
 
     .menu__item--footer {
@@ -79,13 +100,13 @@
     .Icone__footer--logoNikolasGuedes {
         display: none;
     }
-    
+
     .Desenvolvedor-footer {
         display: none;
     }
 
     .area__video {
-        
+
         padding: 1rem 0;
     }
 
@@ -114,7 +135,7 @@
 
         border-bottom: 0;
         border-right: 0;
-    
+
     }
 
     .img-logo--jogo {
@@ -123,13 +144,13 @@
     }
 
     .titulo-plataformas {
-        
+
         padding: 1rem 4rem;
         margin-top: 1rem;
     }
 
-  
-    
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -152,7 +173,7 @@
         padding: 0 2em;
         font-weight: 200;
     }
-   
+
 
     .menu__link:nth-child(1) {
 
@@ -174,9 +195,33 @@
         display: none;
     }
 
-    .menu_celular__botao:checked ~ .lista-menu__celular {
+    .menu_celular__botao:checked~.lista-menu__celular {
         display: none;
     }
+
+
+    .area__capa--logo {
+
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto;
+
+    }
+
+    .texto_capa{
+
+        display: flex;
+
+    }
+
+    .logo_nk {
+
+        width: 40%;
+        margin-left: 7em;
+
+    }
+
+
 
 
     .area__pilares--icones {
@@ -204,7 +249,7 @@
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 0.2rem;
-       
+
     }
 
     .menu__item--footer {
@@ -219,7 +264,7 @@
     .Icone__footer--logoNikolasGuedes {
         display: flex;
     }
-    
+
     .Desenvolvedor-footer {
         display: flex;
     }
@@ -239,8 +284,8 @@
         padding: 0 4em;
         font-weight: 200;
     }
-   
-    .area__projetos--icones{
+
+    .area__projetos--icones {
 
         flex-direction: row;
         flex-wrap: nowrap;
@@ -252,9 +297,9 @@
         height: 295px;
         margin: 2rem 1rem;
     }
-    
+
     .texto-descricao {
-        
+
         padding: 0 5rem;
 
     }
@@ -294,10 +339,16 @@
     .logo__cabecalho {
         left: 5em;
     }
-    
+
     .texto-descricao {
-        
+
         padding: 0 10rem;
+
+    }
+
+    .logo_nk {
+
+        width: 30%;
 
     }
 
@@ -323,5 +374,5 @@
 
         padding: 2rem 10rem;
     }
-    
+
 }

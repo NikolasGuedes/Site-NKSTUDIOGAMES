@@ -12,24 +12,143 @@
 .area__capa--logo {
 
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
-    background-color: var(--Preto);
+
+    /* background-color: var(--Preto); */
+    /* background-image: url(../imgs/gradiente_fundo.svg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    /*
-
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    
     transition: 0.5 all;
     clip-path: 
     polygon(
             0% 0%,
             100% 0%,
-            100% calc(100% - 250px),
+            100% calc(100% - 180px),
             0% 100%
         );  
-    */
+    
 }
+
+.degrade_azul{
+
+    background: linear-gradient(300deg,#00cc99,#6600ff,#1972FF);
+    background-size: 180% 180%;
+    animation: gradient-animation 15s ease infinite;
+
+
+}
+
+.degrade_laranja{
+
+    background: linear-gradient(300deg,#833ab4,#fd1d1d,#fcb045);
+    background-size: 180% 180%;
+    animation: gradient-animation 15s ease infinite;
+
+    
+}
+
+.degrade_roxo{
+
+    background: linear-gradient(300deg,#0003ff,#6500ff,#4100a3);
+    background-size: 180% 180%;
+    animation: gradient-animation 15s ease infinite;
+
+    
+}
+
+@keyframes gradient-animation {
+
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+
+  }
+
+  .logo_nk{
+
+    display: flex;
+    align-self: center;
+    justify-self: center;
+
+    animation: logo_nk 5s ease-in-out infinite;
+    margin-left: 7em;
+
+  }
+
+  .texto_capa{
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+
+    width: 90%;
+
+  }
+
+  .titulo-capa-linha-cima {
+    text-align: left;
+    color: #e4e4e4;
+    font-size: 3rem;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 0.7rem;
+    border-top: 1px solid #e4e4e4;
+    width: 80%;
+}
+
+  .titulo-capa {
+    text-align: left;
+    color: #e4e4e4;
+    font-size: 3rem;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 0.7rem;
+    width: 80%;
+}
+
+.titulo-capa-linha-baixo {
+    text-align: left;
+    color: #e4e4e4;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid #e4e4e4;
+    width: 80%;
+}
+
+  @keyframes logo_nk {
+
+    0% {
+        transform: translateY(0rem)
+    }
+    
+    50% {
+        transform: translateY(-2rem)
+    }
+    
+    100% {
+        transform: translateY(0rem)
+    }
+
+  }
+
 
 .area__pilares, .area__descricao {
     padding: 2rem 0;
@@ -73,7 +192,24 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    background: red;
 }
+
+.base_card{
+
+    background: red;
+    border-radius: 2em;
+    margin: 1em;
+
+}
+
+.cor_card_cinza {
+
+    background: var(--Cinza-escuro);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
+
+}
+
 
 .card__pilar {
 
@@ -97,15 +233,15 @@
     
 }
 
-.card__pilar:nth-child(1) {
+.logo_criatividade {
     background: url(../imgs/pilar-criatividade.png) center / cover no-repeat;  
 }
 
-.card__pilar:nth-child(2) {
+.logo_imersao {
     background: url(../imgs/pilar-imersao.png) center / cover no-repeat;  
 }
 
-.card__pilar:nth-child(3) {
+.logo_diversao{
     background: url(../imgs/pilar-diversao.png) center / cover no-repeat;  
 }
 
@@ -157,15 +293,15 @@
     height: 400px;
     margin: 2rem 2rem;
     border-radius: 30px;
-    transition: 0.2s all;
+    transition: 0.5s;
 }
 
 .card__projetos:hover
 {
-    /*
-    transform: scale(1.05);
-    */
-    border: 4px solid #ffffff;
+    
+    transform: translateY(-20px);
+    
+    border: 2px solid #ffffff;
 }
 
 .card__projetos--titulo {

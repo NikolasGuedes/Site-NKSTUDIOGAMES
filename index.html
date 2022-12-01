@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;700&display=swap" rel="stylesheet">
     <title>NK STUDIO GAMES</title>
 </head>
+
 <body class="app">
-    
+
     <header class="cabecalho">
         <div class="container">
             <ul class="menu__lista">
@@ -33,8 +35,8 @@
                 </li>
             </ul>
         </div>
-        
-         <div class="container">
+
+        <div class="container">
             <input type="checkbox" id="menu_celular" class="menu_celular__botao">
             <label for="menu_celular">
                 <span class="menu__link--celular"></span>
@@ -49,108 +51,148 @@
                 <li class="lista-menu__celular--item">
                     <a href="#projetos" class="lista-menu__link">Projetos</a>
                 </li>
-            </ul> 
-         </div>
-        
+            </ul>
+        </div>
+
     </header>
 
     <main class="conteudo" id="home">
-        <section class="area__capa--logo">
-            <img src="./assets/imgs/logo-nkstudiogames.png" alt="Logo NK STUDIO GAMES">
+
+        <section class="area__capa--logo" id="capa_logo">
+
+            <img src="./assets/imgs/logo-nkstudiogames.png" alt="Logo NK STUDIO GAMES" class="logo_nk">
+
+            <div class="texto_capa hidden">
+                <p class="titulo-capa-linha-cima">SE DESAFIANDO</p>
+                <p class="titulo-capa">A CRIAR</p>
+                <p class="titulo-capa-linha-baixo">MUNDOS</p>
+            </div>
+
         </section>
 
         <section class="area__pilares" id="sobre">
-            <div class="area__pilares--texto"> 
-                 <p class="texto-descricao">A <b><i>nk studio games</i></b> é um studio de
-                    jogos indie onde os três pilares principais são:</p> 
+
+            <div class="area__pilares--texto">
+
+                <p class="texto-descricao">A <b><i>nk studio games</i></b> é um studio de jogos indie onde os três pilares principais são:</p>
+
             </div>
-           <div class="area__pilares--icones">  
-                 <div class="card__pilar caixa">
-                    <h3 class="card__pilar--titulo"> CRIATIVIDADE</h3>
+
+            <div class="area__pilares--icones">
+
+                <div class="base_card cor_card_cinza hidden">
+
+                    <div class="card__pilar caixa logo_criatividade">
+                        <h3 class="card__pilar--titulo"> CRIATIVIDADE</h3>
+                    </div>
+
                 </div>
-                <div class="card__pilar caixa">
-                    <h3 class="card__pilar--titulo"> IMERSÃO</h3>
+
+                <div class="base_card cor_card_cinza hidden">
+
+                    <div class="card__pilar caixa logo_imersao">
+                        <h3 class="card__pilar--titulo"> IMERSÃO</h3>
+                    </div>
+
                 </div>
-                <div class="card__pilar caixa">
-                    <h3 class="card__pilar--titulo"> DIVERSÃO</h3>
+
+                <div class="base_card cor_card_cinza hidden">
+
+                    <div class="card__pilar caixa logo_diversao">
+                        <h3 class="card__pilar--titulo"> DIVERSÃO</h3>
+                    </div>
+
                 </div>
-           </div>
+
+            </div>
         </section>
 
         <section class="area__projetos" id="projetos">
-            <div class="area__projetos--titulo"> 
-                <p class="titulo-projetos">PROJETOS</p> 
-           </div>
-           <div class="area__projetos--icones">
-               <a href="./oli.html">
-                    <div class="card__projetos caixa linha-01">
+
+            <div class="area__projetos--titulo">
+                <p class="titulo-projetos">PROJETOS</p>
+            </div>
+
+            <div class="area__projetos--icones ">
+
+                <a href="./oli.html">
+                    <div class="card__projetos caixa linha-01 hidden">
                         <h3 class="card__projetos--titulo"> OLI </h3>
                     </div>
                 </a>
 
-                <div class="card__projetos caixa linha-01">
+                <div class="card__projetos caixa linha-01 hidden">
                     <h3 class="card__projetos--titulo"> UPPER LINE </h3>
                 </div>
 
-                <div class="card__projetos caixa linha-01">
+                <div class="card__projetos caixa linha-01 hidden">
                     <h3 class="card__projetos--titulo"> UPPER LINE 2 </h3>
                 </div>
 
-           </div>
-           <div class="area__projetos--icones">
-
-            <div class="card__projetos caixa linha-02">
-                <h3 class="card__projetos--titulo"> UPPER LINE 2 </h3>
             </div>
 
-            <div class="card__projetos caixa linha-02">
-                <h3 class="card__projetos--titulo"> ?? </h3>
+            <!--
+            <div class="area__projetos--icones">
+
+                <div class="card__projetos caixa linha-02">
+                    <h3 class="card__projetos--titulo"> UPPER LINE 2 </h3>
+                </div>
+
+                <div class="card__projetos caixa linha-02">
+                    <h3 class="card__projetos--titulo"> ?? </h3>
+                </div>
+
+                <div class="card__projetos caixa linha-02">
+                    <h3 class="card__projetos--titulo"> ?? </h3>
+                </div>
+
+
             </div>
+            -->
 
-            <div class="card__projetos caixa linha-02">
-                <h3 class="card__projetos--titulo"> ?? </h3>
-            </div>
-
-
-       </div>
         </section>
-        
+
     </main>
 
-    <footer class="rodape"> 
-       <nav class="menu__esquerda">
-           <ul class="menu__item--footer">
-               <li>
-                   NK STUDIO GAMES &copy; 2022
-               </li>
-           </ul>
-       </nav>
-       <nav class="menu__esquerda">
-        <ul class="menu__footer">
-            <li  class="menu__item--footer">
-                <a href="https://www.instagram.com/guedes_nk/" target="_blank">
-                    <img src="./assets/imgs/instagram-icone_footer.png" alt="" class="Icone__footer">
-                </a>
-                <a href="https://www.facebook.com/nkstudiogames" target="_blank">
-                    <img src="./assets/imgs/facebook-icone_footer.png" alt="" class="Icone__footer">
-                </a>
-                <a href="https://github.com/NikolasGuedes" target="_blank">
-                    <img src="./assets/imgs/github-icone_footer.png" alt="" class="Icone__footer">
-                </a>
-                <a href="https://www.linkedin.com/in/nikolas-guedes-da-silva-6497541a1/" target="_blank">
-                    <img src="./assets/imgs/linkdin-icone_footer.png" alt="" class="Icone__footer">
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <nav class="menu__esquerda">
-        <ul class="menu__footer">
-            <li class="menu__item--footer">
-                <p class="Desenvolvedor-footer">Desenvolvido por</p>
-                <img src="./assets/imgs/logo-NikolasGuedes.png" alt="Simbolo Nikolas Guedes" class="Icone__footer--logoNikolasGuedes">
-            </li>
-        </ul>
-    </nav>
+    <footer class="rodape">
+        <nav class="menu__esquerda">
+            <ul class="menu__item--footer">
+                <li>
+                    NK STUDIO GAMES &copy; 2022
+                </li>
+            </ul>
+        </nav>
+        <nav class="menu__esquerda">
+            <ul class="menu__footer">
+                <li class="menu__item--footer">
+                    <a href="https://www.instagram.com/guedes_nk/" target="_blank">
+                        <img src="./assets/imgs/instagram-icone_footer.png" alt="" class="Icone__footer">
+                    </a>
+                    <a href="https://www.facebook.com/nkstudiogames" target="_blank">
+                        <img src="./assets/imgs/facebook-icone_footer.png" alt="" class="Icone__footer">
+                    </a>
+                    <a href="https://github.com/NikolasGuedes" target="_blank">
+                        <img src="./assets/imgs/github-icone_footer.png" alt="" class="Icone__footer">
+                    </a>
+                    <a href="https://www.linkedin.com/in/nikolas-guedes-da-silva-6497541a1/" target="_blank">
+                        <img src="./assets/imgs/linkdin-icone_footer.png" alt="" class="Icone__footer">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <nav class="menu__esquerda">
+            <ul class="menu__footer">
+                <li class="menu__item--footer">
+                    <p class="Desenvolvedor-footer">Desenvolvido por</p>
+                    <img src="./assets/imgs/logo-NikolasGuedes.png" alt="Simbolo Nikolas Guedes"
+                        class="Icone__footer--logoNikolasGuedes">
+                </li>
+            </ul>
+        </nav> -->
     </footer>
+
+    <script src="./assets/js/app.js"></script>
+    
 </body>
+
 </html>
