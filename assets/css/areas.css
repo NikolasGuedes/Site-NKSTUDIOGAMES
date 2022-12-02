@@ -355,7 +355,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../imgs/screenshot-OLI.jpg) center / cover no-repeat; 
+
+    background: var(--Preto);
+  
+}
+
+.imagem_jogo_01 {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../imgs/screenshot-OLI_01.jpg) center / cover no-repeat; 
+}
+
+.imagem_jogo_02 {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../imgs/screenshot-OLI_02.jpg) center / cover no-repeat; 
+}
+
+.imagem_jogo_03 {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../imgs/screenshot-OLI_03.jpg) center / cover no-repeat; 
+}
+
+.imagem_jogo_04 {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../imgs/screenshot-OLI_04.jpg) center / cover no-repeat; 
 }
 
 .texto-descricao--jogos {
@@ -368,6 +410,11 @@
     margin: 0%;
     line-height: 3rem;
     font-weight: 500;
+
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
+    background: var(--Cinza-escuro);
+    margin: 1em 4em;
+    border-radius: 2em;
 }
 
 .area__plataformas {

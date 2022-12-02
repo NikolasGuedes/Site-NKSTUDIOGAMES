@@ -121,6 +121,7 @@
     .texto-descricao--jogos {
 
         padding: 2rem 3rem;
+        margin: 1em 1em;
     }
 
     .area__plataformas {
@@ -366,7 +367,9 @@
 
     .texto-descricao--jogos {
 
-        padding: 2rem 15rem;
+        padding: 2rem 10rem;
+
+        margin: 1em 4em;
     }
 
 
